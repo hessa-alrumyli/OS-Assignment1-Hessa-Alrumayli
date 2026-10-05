@@ -30,6 +30,10 @@ class Process implements Runnable {
     private int timeQuantum; // Time slice (time quantum) allowed per CPU access (in milliseconds)
     private int remainingTime; // Time left for the process to finish its execution
     private int priority;
+    // Feature 3: Waiting time tracking
+    private long creationTime;
+    private long readyQueueEntryTime;
+    private long waitingTime = 0;
 
     // Constructor to initialize the process with name, burst time, and time quantum
     public Process(String name, int burstTime, int timeQuantum) {
@@ -38,6 +42,8 @@ class Process implements Runnable {
         this.timeQuantum = timeQuantum;
         this.remainingTime = burstTime; // Initially, remaining time is equal to the burst time
         this.priority= 1+ new Random().nextInt(10);
+        this.creationTime = System.currentTimeMillis();
+        this.readyQueueEntryTime = this.creationTime;
     }
 
     // This method will be called when the thread for this process is started
@@ -146,6 +152,17 @@ class Process implements Runnable {
     public boolean isFinished() {
         return remainingTime <= 0;
     }
+    public void markReadyQueueEntry() {
+    readyQueueEntryTime = System.currentTimeMillis();
+}
+
+public void updateWaitingTime() {
+    waitingTime += System.currentTimeMillis() - readyQueueEntryTime;
+}
+
+public long getWaitingTime() {
+    return waitingTime;
+}
 }
 
 public class SchedulerSimulation {
@@ -163,6 +180,7 @@ public class SchedulerSimulation {
         
         // Generate random number of processes between 10 and 20
         int numProcesses = 10 + random.nextInt(11); // Random number between 10 and 20
+        Process[] allProcesses = new Process[numProcesses];
         
         // Queue to manage processes in a First-In-First-Out (FIFO) order
         Queue<Thread> processQueue = new LinkedList<>();
@@ -204,6 +222,7 @@ public class SchedulerSimulation {
             
             // Create a new process object with a unique name, burst time, and the defined time quantum
             Process process = new Process("P" + i, burstTime, timeQuantum);
+            allProcesses[i - 1] = process;
             
             // Add the process to the ready queue and the map
             addProcessToQueue(process, processQueue, processMap);
@@ -241,6 +260,7 @@ public class SchedulerSimulation {
             }
             System.out.println(Colors.BRIGHT_WHITE + "]" + Colors.RESET);
             System.out.println(Colors.BOLD + Colors.MAGENTA + "└" + "─".repeat(79) + Colors.RESET + "\n");
+            processMap.get(currentThread).updateWaitingTime();
             contextSwitchCount++;
             // Start the thread, which will run the process for one time quantum
             currentThread.start();
@@ -283,6 +303,19 @@ public class SchedulerSimulation {
                           "╚════════════════════════════════════════════════════════════════════════════════╝" + 
                           Colors.RESET + "\n");
                           System.out.println("Total context switches : "+ contextSwitchCount);
+                          System.out.println("\nProcess Name\tBurst Time\tWaiting Time\tTurnaround Time");
+
+for (Process p : allProcesses) {
+    long waitingTime = p.getWaitingTime();
+    long turnaroundTime = waitingTime + p.getBurstTime();
+
+    System.out.println(
+        p.getName() + "\t\t" +
+        p.getBurstTime() + "\t\t" +
+        waitingTime + "\t\t" +
+        turnaroundTime
+    );
+}
     }
     
     // Method to add a process to the queue and map, while printing a "ready" message
@@ -290,7 +323,7 @@ public class SchedulerSimulation {
                                         Map<Thread, Process> processMap) {
         // Create a new thread to run the process
         Thread thread = new Thread(process);
-        
+        process.markReadyQueueEntry();
         // Add the thread to the ready queue
         processQueue.add(thread);
         
