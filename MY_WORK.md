@@ -184,7 +184,7 @@
 
 ---
 
-### Entry 4 - October 5, 2026, [Time]
+### Entry 4 - October 5, 2026, [5 pm]
 **What I did**: I added waiting time tracking for each process.
 
 **Details**:
@@ -201,30 +201,39 @@
 **Time spent**: About 45 minutes
 ---
 
-### Entry 5 - [Date and Time]
-**What I did**:
+### Entry 5 - October 5, 2026, [6 pm]
+**What I did**: I tested the final program and checked all the required features.
 
 **Details**:
+- I ran the program after finishing the three features.
+- I checked that the priority values appeared in the ready queue.
+- I checked that the context switch counter was printed at the end.
+- I checked the waiting time and turnaround time table.
+- I made sure the program ran without errors.
 
-**Challenges**:
+**Challenges**: I wanted to make sure all the values in the final output were correct.
 
-**Solution**:
+**Solution**: I reviewed the output and checked some of the calculations, especially the turnaround time.
 
-**Time spent**:
+**Time spent**: About 20 minutes
 
 ---
 
-### Entry 6 - [Optional - Date and Time]
-**What I did**:
+### Entry 6 - October 6, 2026, [1:30 pm]
+
+**What I did**: I updated the documentation in `MY_WORK.md`.
 
 **Details**:
+- I filled in my student information.
+- I added my development log entries.
+- I organized the details of each work session.
+- I checked that the dates, tasks, and time spent were included.
 
-**Challenges**:
+**Challenges**: I needed to organize the work I had completed into clear development log entries.
 
-**Solution**:
+**Solution**: I reviewed my work sessions and documented each task separately.
 
-**Time spent**:
-
+**Time spent**: in spreated time
 ---
 
 ## Development Log Summary
