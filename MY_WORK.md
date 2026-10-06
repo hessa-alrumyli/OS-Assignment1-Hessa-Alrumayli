@@ -167,17 +167,20 @@
 
 
 ---
-### Entry 3 - [Date and Time]
-**What I did**:
+### Entry 3 - October 5, 2026, [Tim: 4pm]
+**What I did**: I added a context switch counter to the scheduler.
 
 **Details**:
+- I added a static variable to count context switches.
+- I increased the counter each time a process started running.
+- I printed the total number of context switches at the end of the program.
+- I ran the program and checked the result.
 
-**Challenges**:
+**Challenges**: I was not sure where the counter should be increased.
 
-**Solution**:
+**Solution**: I placed the counter before `currentThread.start()` so it increases when a new process starts running.
 
-**Time spent**:
-
+**Time spent**: About 30 minutes
 
 ---
 
