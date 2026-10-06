@@ -240,13 +240,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [5-6 hours]
 
-**Most challenging part**:
+**Most challenging part**:The most challenging part was understanding how to calculate and track the waiting time correctly.
 
-**Most interesting learning**:
+**Most interesting learning**:The most interesting part was seeing how Round-Robin scheduling gives each process a time quantum and returns unfinished processes to the ready queue.
 
-**What I would do differently next time**:
+**What I would do differently next time**: I would read the full code earlier and test each change immediately before moving to the next task
 
 ---
 
@@ -266,7 +266,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I learned that threads are used to execute tasks inside a program. In this assignment, each simulated process is executed using a Java thread. I understood that `Thread.start()` starts the thread and allows its `run()` method to execute. I also learned that `Thread.join()` makes the main thread wait until the current thread finishes. The existing code uses `Thread.sleep()` to simulate the CPU working for a certain amount of time. I also learned that a process can return to the ready queue if it does not finish within the time quantum.]
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -274,7 +274,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I think the most challenging part was adding the waiting time tracking feature. At first, I was not sure when the waiting time should start and when it should be updated. I also needed to understand how the ready queue works before adding the code. It was confusing to decide where to use `System.currentTimeMillis()`. I tested the program several times and checked the final table after each change. After that, I understood how the waiting time was calculated for each process.]
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -282,7 +282,7 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[I overcame the challenges by working on the assignment step by step. I read the README again when I was not sure what to do. I also reviewed the code to understand where each feature should be added. After every change, I ran the program and checked the output. When something was confusing, I asked for help and compared the result with the assignment requirements. This helped me understand the code better and fix the problems.]
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -290,19 +290,19 @@
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+[Multithreading can be used in many real-world applications to make programs more responsive. For example, a web browser can use different threads for loading a page, playing media, and responding to user actions at the same time. A game can also use separate threads for graphics, sound, and player input. This is similar to the assignment because different tasks share CPU time instead of one task using it for too long. Round-Robin scheduling can help give each task a fair amount of CPU time. Multithreading helps programs handle several tasks efficiently without making the whole application stop and wait.]
 
 ### Optional: What would you like to learn more about?
 
-[Any topics related to threading or operating systems that you're curious about?]
+I would like to learn more about how threads are scheduled by the operating system.
 
 ### Optional: How confident do you feel about multithreading concepts now?
 
-[Beginner / Intermediate / Confident. What do you understand well? What needs more practice?]
+Intermediate. I understand the basic ideas of threads, the ready queue, and Round-Robin scheduling, but I still need more practice.
 
 ### Optional: Feedback on the assignment
 
-[Any comments? Was it helpful? Too easy or hard? Suggestions?]
+The assignment was useful and helped me understand multithreading better through practice.
 
 ---
 
