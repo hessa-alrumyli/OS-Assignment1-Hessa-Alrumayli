@@ -29,11 +29,11 @@
 
 | Field | Your Answer |
 |-------|-------------|
-| **Full Name** | [Write your full name here] |
-| **Student ID** | [Write your student ID here] |
-| **University Email** | [yourid]@std.psau.edu.sa |
-| **GitHub Username** | [your-github-username] |
-| **Repository Link** | [Paste your repository link here] |
+| **Full Name** | [Hessa Alrumayli] |
+| **Student ID** | [446051692] |
+| **University Email** | [446051692]@std.psau.edu.sa |
+| **GitHub Username** | [hessa-alrumyli] |
+| **Repository Link**|[https://github.com/hessa-alrumyli/OS-Assignment1-Hessa-Alrumayli.git] |
  
 ---
 
@@ -129,16 +129,22 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - October 5, 2026, [1:30]
+
+**What I did**: I set up the assignment and added my student ID.
 
 **Details**:
+- I opened the assignment in VS Code.
+- I changed the student ID in `SchedulerSimulation.java` to 446051692.
+- I installed and configured Git and JDK 17.
+- I ran the program to make sure it worked.
+- I committed and pushed the student ID change.
 
-**Challenges**:
+**Challenges**: Git and Java were not set up on my laptop at first.
 
-**Solution**:
+**Solution**: I installed Git and JDK 17 and configured them in VS Code.
 
-**Time spent**:
+**Time spent**: About 2 hours
 
 ---
 
