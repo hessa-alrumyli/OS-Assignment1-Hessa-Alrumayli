@@ -184,17 +184,21 @@
 
 ---
 
-### Entry 4 - [Date and Time]
-**What I did**:
+### Entry 4 - October 5, 2026, [Time]
+**What I did**: I added waiting time tracking for each process.
 
 **Details**:
+- I added variables to store the waiting time.
+- I used `System.currentTimeMillis()` to calculate how long each process waited.
+- I updated the waiting time before the process started running.
+- I added a final table showing the process name, burst time, waiting time, and turnaround time.
+- I ran the program and checked that the values were displayed correctly.
 
-**Challenges**:
+**Challenges**: I was confused about when the waiting time should start and stop.
 
-**Solution**:
+**Solution**: I tracked the time when the process entered the ready queue and updated it before the process started running.
 
-**Time spent**:
-
+**Time spent**: About 45 minutes
 ---
 
 ### Entry 5 - [Date and Time]
