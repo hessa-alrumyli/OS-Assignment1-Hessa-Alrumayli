@@ -148,19 +148,25 @@
 
 ---
 
-### Entry 2 - [Date and Time]
-**What I did**:
+### Entry 2 - October 5, 2026, [3:20pm]
+
+**What I did**: I added a priority value for each process.
 
 **Details**:
+- I added a priority variable to the `Process` class.
+- Each process gets a random priority from 1 to 10.
+- I displayed the priority when the process enters the ready queue.
+- I ran the program to check that the priorities appeared correctly.
 
-**Challenges**:
+**Challenges**: I was not sure where to add the priority and how to display it in the ready queue.
 
-**Solution**:
+**Solution**: I added the priority to the `Process` class and used `getPriority()` when printing the process information.
 
-**Time spent**:
+**Time spent**: about 20 m 
+
+
 
 ---
-
 ### Entry 3 - [Date and Time]
 **What I did**:
 
@@ -171,6 +177,7 @@
 **Solution**:
 
 **Time spent**:
+
 
 ---
 
