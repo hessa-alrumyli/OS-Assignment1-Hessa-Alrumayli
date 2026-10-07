@@ -419,36 +419,36 @@ Round-Robin can give each thread a time quantum so one request does not use the 
 > ⚠️ **WARNING:** Go through every line. Late submission costs **-1 mark per day**, and the deadline is **October 10, 2026**.
 
 **Repository**
-- [ ] Repository is **PUBLIC** (Settings → Danger Zone → Visibility)
-- [ ] Repository is renamed to `OS-Assignment1-YourFirstName-YourLastName`
-- [ ] GitHub account uses the university email (`@std.psau.edu.sa`)
+- [done ] Repository is **PUBLIC** (Settings → Danger Zone → Visibility)
+- [done ] Repository is renamed to `OS-Assignment1-YourFirstName-YourLastName`
+- [ done] GitHub account uses the university email (`@std.psau.edu.sa`)
 
 **Code**
-- [ ] Student ID is set in `SchedulerSimulation.java` (line 150)
-- [ ] Code compiles and runs with no errors
-- [ ] Feature 1 (priority), Feature 2 (context switches) and Feature 3 (waiting time table) all work
-- [ ] Each feature has clear comments
+- [ done] Student ID is set in `SchedulerSimulation.java` (line 150)
+- [ done] Code compiles and runs with no errors
+- [ done] Feature 1 (priority), Feature 2 (context switches) and Feature 3 (waiting time table) all work
+- [done ] Each feature has clear comments
 
 **Commits**
-- [ ] **At least 3 meaningful commits, ideally 6 or more**
-- [ ] **One commit per feature**
-- [ ] Commits are spread over **different dates** (not all in the last hour)
-- [ ] Everything is **pushed** to GitHub
+- [done ] **At least 3 meaningful commits, ideally 6 or more**
+- [done ] **One commit per feature**
+- [ done] Commits are spread over **different dates** (not all in the last hour)
+- [ done] Everything is **pushed** to GitHub
 
 **This file (`MY_WORK.md`)**
-- [ ] Full name and student ID filled in at the top
-- [ ] Development log has **5+ entries** on different dates
-- [ ] Reflection: 4 questions, 5-7 sentences each
-- [ ] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
-- [ ] No `[...]` placeholders left
-- [ ] No section headers deleted
+- [done ] Full name and student ID filled in at the top
+- [ done] Development log has **5+ entries** on different dates
+- [ done] Reflection: 4 questions, 5-7 sentences each
+- [ done] Technical answers: 4 questions, 3-5 sentences each, with examples from **your** output
+- [ done] No `[...]` placeholders left
+- [ done] No section headers deleted
 
 **Video**
-- [ ] 2-3 minutes long, named `StudentID_Assignment1_Demo.mp4`
-- [ ] Shows your name, ID, repository, 3 features, IDE execution, one threading concept, and commit history
-- [ ] Link is **public** (tested in an incognito window) and pasted in the **Video Link** section above
+- [done ] 2-3 minutes long, named `StudentID_Assignment1_Demo.mp4`
+- [done ] Shows your name, ID, repository, 3 features, IDE execution, one threading concept, and commit history
+- [done ] Link is **public** (tested in an incognito window) and pasted in the **Video Link** section above
 
 **Blackboard**
-- [ ] Submit **only** the link to your public GitHub repository
+- [ done] Submit **only** the link to your public GitHub repository
 
 > 🎯 **Good luck!** Start early, commit regularly, and make sure you can explain every line you submit.
